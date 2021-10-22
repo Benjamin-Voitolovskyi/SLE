@@ -62,7 +62,7 @@ public class Gauss extends SLESolution{
             if (augmentedA[i][i] != 0.0)
                 ++rank;
 
-        if (n > m && rank < n)
+        if (n > m || rank < n)
             throw new Exception("The system has unlimited amount of roots!");
 
         x[n - 1] = augmentedA[n - 1][n] / augmentedA[n - 1][n - 1];
