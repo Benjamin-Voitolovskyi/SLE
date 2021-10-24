@@ -77,5 +77,13 @@ public class Program {
         printVector(b);
 
         //Test Seidel's method here.
+        double[][] A = {
+                { 0, 0.17, -0.31, 0.16, -1.2 },
+                { 0, 0.82, 0.43, -0.08, 0.38 },
+                { 0.22, 0.18, 0.75, 0.07, 0.48 },
+                { 0.08, 0.07, 0.71, 0.96, -1.24 },
+        };
+        Seidel seidel = new Seidel();;
+        seidel.SeidelMethod(A);
     }
 }
